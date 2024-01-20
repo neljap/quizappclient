@@ -23,7 +23,7 @@ export const usePublishResult = (resultData) => {
     try {
     //   if (result !== [] && !username) throw new Error("Couldn't get Result");
       await postServerData(
-        "http://localhost:5000/api/result",
+        "https://quizappserver-nhdz.onrender.com/api/result",
         resultData,
         (data) => data
       );

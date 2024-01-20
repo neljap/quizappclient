@@ -6,9 +6,12 @@ export default function ResultTable() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        getServerData("http://localhost:5000/api/result", (res) => {
-            setData(res)
-        })
+        getServerData(
+          "https://quizappserver-nhdz.onrender.com/api/result",
+          (res) => {
+            setData(res);
+          }
+        );
     })
 
   return (
